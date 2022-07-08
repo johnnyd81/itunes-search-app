@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Matches the snapshot 1`] = `
+<div
+  className="appHeader"
+>
+  <h1
+    className="titleText"
+  >
+    iTunes search app
+  </h1>
+</div>
+`;

@@ -1,0 +1,241 @@
+.App {
+  min-height: 100vh;
+  background-color: rgb(225, 220, 245);
+}
+/********* HEADER COMPONENT************/
+/*the declarations below style my title heading. I preferred a black background with a contrasting color for the heading text */
+.titleText {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: rgb(185, 72, 30);
+  margin-top: 0;
+  font-size: 2.3rem;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-shadow: 1px 1px white;
+  background-color: rgb(24, 20, 20);
+}
+/************************************/
+
+/******** SEARCH COMPONENT*********/
+/* the declarations below style my input field, dropdown-menu, search button and my favourite link button.
+ Each of my buttons in this component has a hover effect applied to it to show the user that it is clickable. */
+.searchBar {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  background-color: rgb(8, 99, 79);
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px rgb(54, 45, 45);
+}
+
+.inputField {
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 1.04rem;
+  font-weight: 700;
+}
+
+.dropdown {
+  border-radius: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 1.04rem;
+  font-weight: 900;
+}
+
+.searchButton {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  border-radius: 10px;
+  background-color: rgb(129, 16, 39);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 15%;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.searchButton:hover {
+  background-color: teal;
+  color: black;
+  font-weight: 800;
+}
+
+.favouriteButton {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  border-radius: 10px;
+  background-color: rgb(43, 117, 43);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 17%;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.favouriteButton:hover {
+  background-color: rgb(47, 175, 218);
+  color: black;
+  font-weight: 800;
+}
+
+/***********************************************/
+
+/********SEARCH ITEM*************/
+/*the styles applied to the searchitem is to differentiate between the image, information text and the button to add the item
+ to favourites. I centered all three using flexbox and the align-items declaration. The information text has a special 
+ coloured background that brings out the white text.*/
+.searchItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(102, 97, 97);
+  color: white;
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.itemInfo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(36, 68, 36);
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+span {
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.addFav {
+  background-color: rgb(8, 71, 55);
+  color: white;
+  text-shadow: 1px 1px black;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+/******************************************************/
+
+/**********SEARCH RESULTS*************/
+/*the results are arranged on the screen using flexbox and the flex-wrap declaration. My welcome message and error message 
+ also get styled to provide feedback instruction to a user*/
+.apiResults {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.introText,
+.errorMessage {
+  text-align: center;
+  margin-top: 140px;
+  font-size: 1.4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+/*****************************************************/
+
+/**********FAVOURITES*******************/
+/*my favourites page is styled a bit differently to my homepage. The button used to return
+ to the homepage has a hover effect to signal clickability.The items are arranged onscreen 
+ using flexbox and the flex-wrap declaration. */
+.favourites {
+  background-color: rgb(143, 172, 96);
+  min-height: 100vh;
+}
+
+.favHeader {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px white;
+  color: rgb(206, 66, 16);
+  margin-top: 0;
+  margin-bottom: 6px;
+  background-color: rgb(22, 20, 20);
+}
+
+.backButton {
+  margin-left: 43.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 800;
+  padding: 3px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background-color: lightblue;
+  box-shadow: 6px 6px 10px rgb(49, 35, 35);
+}
+
+.backButton:hover {
+  background-color: rgb(43, 43, 133);
+  color: white;
+}
+
+.favItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*********************************************/
+
+/************FAVOURITE ITEM***************/
+/*similar to the search item but the favourite item differs in that its background color and button are different.*/
+.favouriteItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(10, 30, 46);
+  color: white;
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.noResults {
+  text-align: center;
+  margin-top: 140px;
+  font-size: 1.4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.deleteButton {
+  margin-top: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(87, 6, 6);
+  padding: 4px;
+  color: white;
+  text-shadow: 1px 1px black;
+  border-radius: 10px;
+}
+
+/*************************************************************/
